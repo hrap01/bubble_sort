@@ -11,7 +11,7 @@ def bubble_sort(l):
     i = 0
     if l is not None:
         while i < len(l) - 1:
-            if l[i] < l[i + 1]:
+            if l[i] <= l[i + 1]:
                 i += 1
             else:
                 for j in range(0, len(l) - 1):
