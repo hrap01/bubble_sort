@@ -14,9 +14,11 @@ def bubble_sort(l):
             if l[i] <= l[i + 1]:
                 i += 1
             else:
-                for j in range(0, len(l) - 1):
+                back_value = 1
+                for j in range(0, len(l) - back_value):
                     if l[j] > l[j + 1]:
                         l[j], l[j + 1] = l[j + 1], l[j]
+                    back_value += 1
                     i = 0
     return l
 
